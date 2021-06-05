@@ -1,26 +1,27 @@
-import { Component, createRef } from 'react';
-import { FiCheckSquare } from 'react-icons/fi';
+import React, { createRef } from 'react'
+import { FiCheckSquare } from 'react-icons/fi'
 
-import { Form } from './styles';
-import Modal from '../Modal';
-import Input from '../Input';
+import { Modal } from '../Modal'
+import { Input } from '../Input'
 
-class ModalEditFood extends Component {
+import { Form } from './styles'
+
+export class ModalEditFood extends React.Component<{},any> {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.formRef = createRef()
   }
 
   handleSubmit = async (data) => {
-    const { setIsOpen, handleUpdateFood } = this.props;
+    const { setIsOpen, handleUpdateFood } = this.props
 
-    handleUpdateFood(data);
-    setIsOpen();
-  };
+    handleUpdateFood(data)
+    setIsOpen()
+  }
 
   render() {
-    const { isOpen, setIsOpen, editingFood } = this.props;
+    const { isOpen, setIsOpen, editingFood } = this.props
 
     return (
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
@@ -41,8 +42,6 @@ class ModalEditFood extends Component {
           </button>
         </Form>
       </Modal>
-    );
+    )
   }
-};
-
-export default ModalEditFood;
+}

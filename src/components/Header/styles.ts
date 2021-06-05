@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   background: #c72828;
@@ -40,4 +40,4 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`

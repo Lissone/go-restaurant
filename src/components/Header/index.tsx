@@ -1,12 +1,13 @@
-import { Component } from 'react';
-import { FiPlusSquare } from 'react-icons/fi';
+import React from 'react'
+import { FiPlusSquare } from 'react-icons/fi'
 
-import { Container } from './styles';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo.svg'
 
-class Header extends Component {
+import { Container } from './styles'
+
+export class Header extends React.Component<{},any> {
   render() {
-    const { openModal } = this.props;
+    const { openModal } = this.props
 
     return (
       <Container>
@@ -29,6 +30,4 @@ class Header extends Component {
       </Container>
     )
   }
-};
-
-export default Header;
+}
