@@ -30,10 +30,11 @@
 
 ## Description
 
-Projeto para cadastro e controle de pratos de comida italiana, como forma de organizar e informar para o funcionário, ou gestor do estabelecimento a quantidade de pratos ativos no cardápio. 
-Utilizado como desafio para migrar o template que estava em Javascript e Class Components para Typescript e Function Components, utlizando hooks.
+Project to register and control Italian food dishes. As a way to organize and inform the employee or manager of the establishment the amount of active dishes on the menu.
 
-No momento funcionando apenas com uma fake api, para aprimoramento de aprendizado das tecnologias presentes.
+Used as a challenge to migrate the template that was in Javascript and Class Components to Typescript and Function Components, using hooks.
+
+At the moment, working only with a fake api, to improve the learning of present technologies.
 
 ## Requirements
 
